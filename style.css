@@ -1,0 +1,39 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(251, 246, 239);
+}
+
+article {
+  border: 2px solid grey;
+  border-radius: 1%;
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgb(255, 252, 249);
+}
+
+img {
+  width: 100%;
+}
+
+.elements {
+  border-bottom: 2px solid grey;
+  width: auto;
+  padding: 15px;
+}
+
+*.elements h3 {
+  margin-top: 0px;
+}
+
+.elements p {
+  margin: 0px;
+}
+
+.links {
+  padding: 15px;
+}
+
+a {
+  padding: inherit;
+}
