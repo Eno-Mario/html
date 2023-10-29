@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Lesson</title>
+    <style>
+      .art {
+        margin: 20px;
+      }
+      input {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Blog Page</h1>
+      <p>Il mio Blog!</p>
+    </header>
+    <main>
+      <article
+        style="
+          background-image: url(/assets/hands.png);
+          color: rgb(182, 9, 188);
+          width: 400px;
+          height: 266px;
+        "
+      >
+        <br />
+        <h3 class="art">Questo è un articolo qualunque!</h3>
+        <p class="art">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          natus in blanditiis iusto, porro possimus cum dolore rem dolores
+          provident quisquam quo ex obcaecati nesciunt pariatur, delectus magnam
+          omnis dicta minus est harum ea consectetur exercitationem? Ea
+          aspernatur praesentium nesciunt deserunt. Dolores porro, tempore
+          eligendi voluptas modi sapiente odio sint.
+        </p>
+      </article>
+
+      <form method="post" action="http://www.develhope.co/">
+        <h4>
+          Se vuoi ricevere altri articoli senza senso via email, compila i
+          seguenti dati.
+        </h4>
+        <label for="nameSurname">Nome e Cognome </label>
+        <input
+          type="text"
+          name="nameSurname"
+          id="nameSurname"
+          pattern="[A-Za-z]"
+          maxlength="40"
+        />
+
+        <label for="mail">Indirizzo email </label>
+        <input type="email" name="mail" id="mail" required />
+
+        <button>Submit</button>
+      </form>
+
+    </main>
+    <footer>
+      <h6>
+        Questa pagina non si prende la responsabilità di dove e come i vostri
+        dati verranno usati :D
+      </h6>
+    </footer>
+  </body>
+</html>
