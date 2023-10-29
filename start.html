@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+      .cpro {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="email">Email </label>
+      <input type="email" name="email" />
+
+      <label for="pass">Password </label>
+      <input type="password" name="pass" />
+
+      <label for="nameLastname">Name and Lastname </label>
+      <input type="text" name="nameLastname" />
+
+      <label for="dateOfBirth">Date of Birth </label>
+      <input type="date" name="dateOfBirth" />
+
+      <label for="phone">Telephone number </label>
+
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+
+      <br />
+      <br />
+
+      <label for="plan">Choose a plan </label>
+      <select name="plan" id="plan">
+        <option value="free">Free Plan</option>
+        <optgroup label="month">
+          <option value="basic">Basic Plan 3.99€/month</option>
+          <option value="medium">Medium Plan 5.99€/month</option>
+          <option value="premium">Premium Plan 10.99€/month</option>
+        </optgroup>
+      </select>
+
+      <input class="cpro" type="checkbox" name="proPlan" value="pro" />
+      <label class="cpro" for="proPlan">Pro Plan 15.99€/month</label>
+
+      <br />
+      <br />
+
+      <label for="ccnumber">Credit card number </label>
+      <input type="text" name="ccnumber" pattern="[0-9]" maxlength="16" />
+
+      <label for="cvc">CVC </label>
+      <input type="text" name="cvc" pattern="[0-9]" maxlength="3" />
+
+      <label for="expDate">Expiration date </label>
+      <input type="month" name="expDate" />
+
+      <label for="billingAdd">Billing Address </label>
+      <input type="text" name="billingAdd" />
+
+      <br />
+      <br />
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
